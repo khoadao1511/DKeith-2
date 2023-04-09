@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Merriweather:wght@400;700;900&family=Montserrat:wght@500;700;900&family=Sacramento&display=swap" 
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="./Index.css">
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="content">
+        <nav class="navbar">
+          <img src="./All piture/D_Keith (2).JPG" alt="logo-photo" class="logo-header"/>
+            <ul>
+              <li><a href="./Index.html">Home</a></li>
+              <li><a href="./menu.html">Menu</a></li>
+              <li><a href="./AboutUs.html">About Us</a></li>
+              <li><a href="./Contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+      </div>
+    </div>
+    
+
+    <div class="profile">
+      <div class="profile-main">
+        <div class="title">
+          <p>A PRE INDUSTRIAL FOOD SYSTEM</p>
+          <div class="info">
+            <img src="./All piture/pexels-waldemar-2290070.JPG" alt="toppic" class="toppic">
+          </div>
+        </div>
+          <img
+              class="pro-icon"
+              src="./All piture/D_Keith (2).JPG"
+              alt=""
+          />
+          <h2 class="nameh2">D_Keith</h2>
+          <p class="desc">
+            A PRE INDUSTRIAL FOOD SYSTEM
+          </p>
+      </div>
+      <hr class="separate" />
+    
+
+      <div class="cothinh1">
+        <dl class="cothinh">
+          <dt>
+            <img src="./All piture/cothinh1.jpg"
+          </dt>
+          <dt>
+            <img src="./All piture/cothinh1-2.jpg"
+          </dt>
+          <dt>
+            <img src="./All piture/cothinh1-3.jpg"
+          </dt>
+          <dt>
+            <img src="./All piture/cothinh1-4.jpg"
+          </dt>
+          <dt>
+            <img src="./All piture/cothinh1-5.jpg"
+          </dt>
+        </dl>
+
+      </div>
+
+
+      
+      <!-- skill -->
+      <h2 class="my-skill">Zero waste</h2>
+      <h3>D_KEITH IS A RESTAURANT DESIGNED FROM BACK TO FRONT, ALWAYS WITH THE BIN IN MIND.</h3>
+      <p class="discript">The production of waste has been eliminated by simply choosing to trade directly with farmers, using re-usable delivery vessels and choosing local ingredients that themselves generated no waste. Any remaining scraps of food is then composted… Closing the loop.</p>
+      <div class="button">
+        <a href="#!" class="csw-btn-button" rel="nofollow" target="_blank" >Find out more</a>
+      </div>
+      <hr class="separate" />
+
+      <div class="container">
+        <img src="./All piture/cmt1.jpg" alt="" class="item">
+        <img src="./All piture/cmt2.jpg" alt="" class="item">
+        <img src="./All piture/cmt3.jpg" alt="" class="item">
+        <img src="./All piture/cmt4.jpg" alt="" class="item">
+        
+      </div>
+      <script>
+        var myIndex = 0
+        carousel();
+
+        function carousel(){
+          var x = document.getElementsByClassName("item");
+          for(var i = 0; i < x.length; i++){
+            x[i].style.display = "none";
+          }
+          myIndex++ ;
+          if(myIndex > x.length){
+            myIndex = 1;
+          }
+          x[myIndex - 1].style.display = "block";
+          setTimeout(carousel,500);
+        }
+      </script>
+
+
+
+      <hr class="separate" />
+
+      <img src="./All piture/pexels-luke-barky-2899737.jpg" alt="HOST AN EVENT AT D_KEITH" class="logoskill"/>
+      <h2 class="my-skill">HOST AN EVENT AT D_KEITH</h2>
+      <div class="skills">
+          <div class="skill-row">
+            <p><video controls class="video">
+              <source src="./All piture/7590497528023675851.mp4">
+            </video></p>
+              <div class="content">
+                  <p class="desc-content1">
+                    WE DESIGNED D_KEITH WITH THE INTENTION TO HOST ALL MANOR OF EVENTS, LARGE AND SMALL.
+                  </p>
+              </div>
+          </div>
+          <div class="skill-row">
+            <div class="content">
+              <p class="desc-content2">
+                IF YOU ARE INTERESTED IN EVENTS OR PRIVATE HIRE, PLEASE GET IN TOUCH AND WE CAN ARRANGE A SUITABLE PACKAGE TO SUIT YOUR NEEDS
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <footer class="footer">
+      <div class="signup">
+        <a>Sign up for news and initiatives: </a>
+        <form class="form">  
+          <input type="email" name="email address" class="box"/><br/>  
+          <button type="" class="submit">Sign me up</button>  
+        </form>
+      </div>
+      <div>
+        <h1 class="contact123">Contact with us</h1>
+        <p class="footercontent">AT D_KEITH WE CHOOSE TO PROVIDE QUALITY THROUGH PURITY, ADOPTING A MORE PRIMITIVE DIET WITH TECHNIQUES BOTH MODERN AND ANCIENT.</p>
+      </div>
+      <ul class="link">
+        <li>   <a href="#!">Linkedin</a></li>
+        <li class="day">   <a href="#!">Facebook</a></li>
+        <li>   <a href="#!">Instagram</a></li>
+      </ul>
+      <p class="email"  ><a href="#!">Khoadangdao1511@gmail.com</a></p>
+        
+    </footer>
+    
+  </body>
+</html>
